@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void main()
+{
+    int x, i, fact;
+
+    printf("Factorial of numbers\n\n");
+
+    for(x = 1; x <= 5; x++)
+    {
+        fact = 1;
+
+        for(i = 1; i <= x; i++)
+        {
+            fact = fact * i;
+        }
+
+        printf("x = %d, factorial = %d\n", x, fact);
+    }
+}
